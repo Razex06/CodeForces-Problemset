@@ -6,26 +6,13 @@ int main(){
     while(t--){
         char chars[4];
         scanf("%s", chars);
-        switch (chars[0])
+        switch (chars[1])
         {
-        case 'X':
-            switch (chars[1])
-            {
-            case '-':
-                x--;
-                break;
-            case '+':
-                x++;
-                break;
-            default:
-                break;
-            }
-            break;
         case '+':
-            x += 1;
+            x++;
             break;
         case '-':
-            x-=1;
+            x--;
             break;            
         default:
             break;
